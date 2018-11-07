@@ -1,9 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <title>Belajar Webpack</title>
+      <script>
+        var name = "Mas Mentor"
+
+        alert('Selamat datang' + " " + name);
+      </script>
+      <link rel="shortcut icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico" />
+      <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Federant' rel='stylesheet'>
+    <style>
+    body {
+      background-color:#222222;
+      font-family: 'Satisfy';
+      font-size: 22px;
+    }
+    .btn {
+      font-family: 'Federant';
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #1c78c0;
+      font-size: 25px;
+      color: white;
+      border: 1px solid #ffffff;
+      transition-duration: 0.4s;
+      border-radius: 12px;
+    }
+    .btn:hover {
+      background-color: #8ed5fa;
+      color: black;
+      box-shadow: 0 12px 16px 0 rgba(4, 181, 235, 0.767), 0 17px 50px 0 rgba(4, 181, 235, 0.767);
+    }
+    .box {
+      color:white;
+      border: 1px solid white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 25px;
+      height: 350px;
+    }
+    .box:hover{
+      background-color:#555555;
+    }
+    table, th, td {
+    border: 0px solid white;
+}
+    </style>
   </head>
   <body>
-    <script src="main.processed.js"></script>
+    <center>
+      <img src="https://cdn-images-1.medium.com/max/2000/1*dQA3VhfjIQc1DYua6KoLFQ.png" width="100%">
+      <table style="width:100%">
+        <tr>
+            <td style="width:50%">
+              <center> 
+              <div class="box">
+                <h2>Perkalian a dengan b:</h2>
+                <p>a = 5</p>
+                <p>b = 5</p>
+                <button id="btn-1" type="button" class="btn">Lihat Hasil</button>
+                <div>Hasilnya = <strong><span id="multiplyA-B"></span></strong></div>
+              </div>
+              </center>
+            </td>
+          <td style="width:50%">
+              <center> 
+            <div class="box">
+              <h2>Perkalian x ( x = 2 ) dengan y:</h2>
+              <p>y = 6</p>
+              <button id="btn-2" type="button" class="btn">Lihat Hasil</button>
+              <div>Hasilnya = <strong><span id="multiplyX-Y"></span></strong></div>
+            </div>
+          </center>
+          </td>
+        </tr>
+        </table>
+   
+    
+    
+    <script src="./dist/main.bundle.js"></script>
+  </center>
   </body>
 </html>
